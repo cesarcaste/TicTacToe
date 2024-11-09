@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class Main {
     public static void game(){
         Scanner sc = new Scanner(System.in);
-        int row = 0;
-        int col = 0;
+        int row;
+        int col;
         Tictactoe game = new Tictactoe();
         game.newGame();
         game.showBoard();
@@ -31,7 +31,7 @@ public class Main {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int option = 0;
+        int option;
         System.out.println("BIENVENIDO AL 3 EN RAYA");
         do{
             System.out.println("1.INICIAR NUEVA PARTIDA\n0.SALIR");
