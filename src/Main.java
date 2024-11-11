@@ -11,7 +11,7 @@ public class Main {
             try{
                 System.out.println("selecciona fila: ");
                 row = sc.nextInt() -1;
-                System.out.println("selecciona column: ");
+                System.out.println("selecciona columna: ");
                 col = sc.nextInt() -1;
                 if(game.isEmpty(row,col)){
                     game.setToken(row,col);

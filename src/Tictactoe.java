@@ -84,7 +84,15 @@ public class Tictactoe {
         }
         return '_';
     }
-
+    private char isDiagonal(){
+        if(board[0][0] == 'X' && board[1][1] == 'X' && board[2][2] == 'X'){
+            return 'X';
+        }
+        if(board[0][0] == 'O' && board[1][1] == 'O' && board[2][2] == 'O'){
+            return 'O';
+        }
+        return '_';
+    }
 
     public char isLine (){
 
@@ -93,6 +101,9 @@ public class Tictactoe {
        }
        if(isVerticalLine() != '_'){
            return isVerticalLine();
+       }
+       if(isDiagonal() != '_'){
+           return isDiagonal();
        }
        return '_';
     }
